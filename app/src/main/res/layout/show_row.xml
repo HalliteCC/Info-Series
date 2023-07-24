@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/home_item_size"
+    android:layout_margin="@dimen/medium_spacing"
+    app:cardCornerRadius="@dimen/home_item_corner_radius"
+    app:cardElevation="@dimen/home_item_elevation"
+    app:cardPreventCornerOverlap="true"
+    tools:layout_height="@dimen/home_item_size"
+    tools:layout_width="@dimen/home_item_size">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/wallpaper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#303030"
+            android:contentDescription="capa da série"
+            android:scaleType="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/serie_title"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/serie_genre"
+            app:layout_constraintStart_toStartOf="@+id/serie_genre"
+            tools:text="Title" />
+
+        <TextView
+            android:id="@+id/serie_genre"
+            style="@style/TextAppearance.MaterialComponents.Subtitle1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="Subtitle" />
+
+        <ImageView
+            android:id="@+id/img_Rating"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="4dp"
+            android:src="@drawable/baseline_star_rate_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <TextView
+            android:id="@+id/text_rating"
+            style="@style/TextAppearance.MaterialComponents.Subtitle1"
+            android:textColor="@color/white"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            app:layout_constraintEnd_toStartOf="@id/img_Rating"
+           app:layout_constraintTop_toTopOf="@id/img_Rating"
+            app:layout_constraintBottom_toBottomOf="@id/img_Rating"
+            tools:text="5.0"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
