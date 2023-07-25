@@ -1,4 +1,4 @@
-package com.example.infoseries.ui.view.fragment
+package com.example.infoseries.ui.view
 
 import android.os.Bundle
 import android.view.LayoutInflater

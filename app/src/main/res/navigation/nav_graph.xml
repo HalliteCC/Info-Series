@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/UIShow"
-        android:name="com.example.infoseries.ui.view.fragment.UIHome"
+        android:name="com.example.infoseries.ui.view.UIHome"
         tools:layout="@layout/fragment_uihome"
         android:label="UIShow" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/uiSeries"
-        android:name="com.example.infoseries.ui.view.fragment.UiSeries"
+        android:name="com.example.infoseries.ui.view.UiSeries"
         android:label="UiSeries"
         tools:layout="@layout/fragment_serie"/>
 </navigation>

@@ -1,4 +1,4 @@
-package com.example.infoseries.ui.view.fragment
+package com.example.infoseries.ui.view
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -12,6 +12,7 @@ import com.example.infoseries.presenters.adapters.SeriesAdapter
 class UIHome : Fragment() {
 
     private lateinit var _binding: FragmentUihomeBinding
+    //private lateinit var viewModel:
 
     private val binding get() = _binding!!
 

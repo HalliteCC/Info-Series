@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.infoseries.databinding.ShowRowBinding
 import com.example.infoseries.domain.model.SerieModel
-import com.example.infoseries.ui.view.viewholder.HomeViewHolder
+import com.example.infoseries.presenters.adapters.viewholder.HomeViewHolder
 
 class SeriesAdapter(private val showItems: List<SerieModel>) :
     RecyclerView.Adapter<HomeViewHolder>() {

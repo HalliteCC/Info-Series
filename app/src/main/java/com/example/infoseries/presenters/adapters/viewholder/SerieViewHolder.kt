@@ -1,4 +1,4 @@
-package com.example.infoseries.ui.view.viewholder
+package com.example.infoseries.presenters.adapters.viewholder
 
 import androidx.recyclerview.widget.RecyclerView
 import com.example.infoseries.databinding.EpisodeRowBinding
